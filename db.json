@@ -1,0 +1,48 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "image": "",
+        "title": "",
+        "price": 24,
+        "description": "Light khaki green/white checks",
+        "stars": 4,
+        "category": "DARKSIDE",
+        "taste": [
+            
+        ]
+      },
+      {
+        "id": 2,
+        "image": "/assets/images/product2.png",
+        "title": "Checked Duvet Cover Set",
+        "colors": [
+          "grey"
+        ],
+        "price": 24,
+        "sizes": [
+          {
+            "value": "50 X 40",
+            "label": "50 X 40"
+          },
+          {
+            "value": "70 X 40",
+            "label": "70 X 40"
+          }
+        ],
+        "description": "Light khaki green/white checks",
+        "stars": 4,
+        "gender": "Woman",
+        "top": false,
+        "quantity": 1,
+        "category": {
+  
+          "shopBy": ["Living Room","Child Room", "Outdoor"],
+          "gender": "Woman",
+          "colors": [
+            "grey"
+          ]
+        }
+      }
+    ]
+  }

@@ -3,6 +3,8 @@ import { Fragment } from "react";
 import { Checkbox } from "antd";
 
 export default function LogIn() {
+    return (
+        
     <Fragment>
          <div className="courses-wrapper">
                 <div className="courses__title">
@@ -425,4 +427,5 @@ export default function LogIn() {
 
             </div>
     </Fragment>
+    )
 }
