@@ -6,6 +6,7 @@ import FogOne from "./../img/FogOne.png";
 import FogTwo from "./../img/FogTwo.png";
 import Portal from "./../img/Portal.png"
 import vectorOne from "./../img/vectorOne.svg"
+import vectorTwo from "./../img/vectorTwo.svg"
 import "./../index.scss"
 
 export default function Main() {
@@ -23,13 +24,25 @@ export default function Main() {
                                 <img src={Hello} alt="error" className="hello-name" />
                                 <img src={Kalyan} alt="error" className="hello-kalyan" />
                                 <img src={Portal} alt="" className="hello-portal" />
-                                <div className="main-subtitle">
-                                    <div className="subtitle-item">
-                                        <img className='vector-one' src={vectorOne} alt='error' />
-                                        <p className="item-text">Здесь ты найдешь
-                                            <br />
-                                            миксы на любой вкус</p>
+                                <div className='subtitle-wrap'>
+
+                                    <div className="main-subtitle">
+                                        <div className="subtitle-item">
+                                            <img className='vector-one' src={vectorOne} alt='error' />
+                                            <img className='vector-two' src={vectorTwo} alt='error' />
+                                            <p className="item-text">Здесь ты найдешь
+                                                <br />
+                                                миксы на любой вкус</p>
+                                        </div>
+                                        <div className="subtitle-item">
+                                            <img className='vector-one' src={vectorOne} alt='error' />
+                                            <img className='vector-two2' src={vectorTwo} alt='error' />
+                                            <p className="item-text">И сможешь поделиться
+                                                <br />
+                                                своими миксами</p>
+                                        </div>
                                     </div>
+                                    
                                 </div>
                             </div>
 
@@ -43,7 +56,9 @@ export default function Main() {
 
                 <main className='main'>
                     <div className='container'>
-
+                        <h1 className='main-title'>Популярные табаки</h1>
+                        <hr className='chertochka'/>
+                        
                     </div>
                 </main>
 
