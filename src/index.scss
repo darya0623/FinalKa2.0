@@ -1,0 +1,106 @@
+.container {
+  margin: 0 370px;
+}
+
+.header {
+  height: 100vh;
+  background: linear-gradient( #ecf2f8, white);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 110px;
+}
+
+.nav-item:hover{
+  color: #A1C4FD;
+  text-decoration: underline;
+}
+
+
+
+.footer {
+  background-color: #F2F6FA;
+  height: 115px;
+}
+
+.footer-nav{
+  width: 572px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.f-nav-item {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: #5c5c6d;
+}
+
+.main-hello {
+    position: relative;
+    top: -770px;
+    z-index: 0;
+}
+
+.hello-name {
+    position: absolute;
+    z-index: -3;
+}
+
+.hello-text {
+    position: absolute;
+    top: -10px;
+font-weight: lighter;
+font-size: 36px;
+color: #868686;
+font-family: var(--font-family);
+}
+
+.hello-kalyan {
+    position: absolute;
+    z-index: -2;
+    top: -130px;
+}
+
+.hello-fog1{
+    width: 900px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.hello-fog2{
+    width: 900px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+// .main {
+    
+//     // background-color: linear-gradient(#2893ff, white);
+// }
+
+.hello-portal{
+width: 350px;
+position: absolute;
+right: 0;
+top: 300px;
+}
+
+body {
+  background: linear-gradient( #ecf2f8, white, #ecf2f8);
+}
+
+.kalyan-wrap{
+  margin-top: 900px;
+}
