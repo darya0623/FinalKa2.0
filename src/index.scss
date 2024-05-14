@@ -176,3 +176,77 @@ display: flex;
 justify-content: end;
 align-items: start;
 }
+
+.card-product {
+  width: 300px;
+}
+
+.product-title {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+color: #000;
+}
+
+.product-category {
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 14px;
+text-transform: uppercase;
+color: #a1c4fd;
+}
+
+.product-taste {
+  display: flex;
+  gap: 5px;
+}
+.taste-item{
+  display: flex;
+  justify-content: center;
+  background: #f2f6fa;
+  border-radius: 50px;
+width: 70px;
+height: 26px;
+}
+
+.tabacks-aside {
+  width: 255px;
+height: 635px;
+}
+
+// .tabacks-article {
+//   display: flex;
+//   width: 1000px;
+// }
+// .tabacks-aside {
+//   display: block;
+
+.tabacks-wrap {
+  display: flex;
+}
+
+.tabacks-header {
+
+ text-align: center;
+}
+
+.header-desc {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 15px;
+line-height: 150%;
+text-align: center;
+color: #5c5c6d;
+}
+.header-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #010624;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}

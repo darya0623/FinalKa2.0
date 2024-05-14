@@ -7,6 +7,7 @@ import FogTwo from "./../img/FogTwo.png";
 import Portal from "./../img/Portal.png"
 import vectorOne from "./../img/vectorOne.svg"
 import vectorTwo from "./../img/vectorTwo.svg"
+import southVibe from "./../img/southVibe.png"
 import "./../index.scss"
 
 export default function Main() {
@@ -58,7 +59,52 @@ export default function Main() {
                     <div className='container'>
                         <h1 className='main-title'>Популярные табаки</h1>
                         <hr className='chertochka'/>
-                        
+                        <div className='cards'>
+                            <div className='card-product'>
+                                <img className='product-image' src={southVibe} alt='error'/>
+                                <b className='product-category'>Darkside</b>
+                                <br/>
+                                <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
+                                <hr/>
+                                <div className='product-taste'>
+                                    <p className='taste-item'>Груша</p>
+                                    <p className='taste-item'>Манго</p>
+                                </div>
+                            </div>
+                            <div className='card-product'>
+                                <img className='product-image' src={southVibe} alt='error'/>
+                                <b className='product-category'>Darkside</b>
+                                <br/>
+                                <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
+                                <hr/>
+                                <div className='product-taste'>
+                                    <p className='taste-item'>Груша</p>
+                                    <p className='taste-item'>Манго</p>
+                                </div>
+                            </div>
+                            <div className='card-product'>
+                                <img className='product-image' src={southVibe} alt='error'/>
+                                <b className='product-category'>Darkside</b>
+                                <br/>
+                                <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
+                                <hr/>
+                                <div className='product-taste'>
+                                    <p className='taste-item'>Груша</p>
+                                    <p className='taste-item'>Манго</p>
+                                </div>
+                            </div>
+                            <div className='card-product'>
+                                <img className='product-image' src={southVibe} alt='error'/>
+                                <b className='product-category'>Darkside</b>
+                                <br/>
+                                <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
+                                <hr/>
+                                <div className='product-taste'>
+                                    <p className='taste-item'>Груша</p>
+                                    <p className='taste-item'>Манго</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </main>
 

@@ -16,10 +16,16 @@ const BreadCrumb = () => (
         title: <a href="/tabackInfo">TabackInfo</a>,
       },
       {
+        title: <a href="/lounges">Lounges</a>,
+      },
+      {
+        title: <a href="/loungeInfo">LoungeInfo</a>,
+      },
+      {
         title: <a href="/login">LogIn</a>,
       },
       {
-        title: <a href="/profile">Profile</a>,
+        title: <a href="/signup">SignUp</a>,
       },
     ]}
   />
