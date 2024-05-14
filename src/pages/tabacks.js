@@ -2,6 +2,7 @@ import React from "react";
 import { Fragment, useState, useEffect, useContext } from "react";
 import { Button, Checkbox, Flex, Typography } from "antd";
 import { Breadcrumb } from "react-bootstrap";
+import southVibe from "./../img/southVibe.png"
 
 export default function Tabacks() {
 
@@ -68,90 +69,92 @@ export default function Tabacks() {
 
         <Fragment>
             <Breadcrumb />
+            <div className="tabacks-catalog">
 
+            </div>
 
-                <div className="container">
-                    <header className="tabacks-header">
+            <div className="container">
+                <header className="tabacks-header">
                     <h1 className="header-title">Табаки</h1>
                     <h3 className="header-desc">Один из крупнейших производителей табака и аксессуаров для кальянов в Российской Федерации.</h3>
-                    </header>
-            <div className="tabacks-wrap">
+                </header>
+                <div className="tabacks-wrap">
 
-                <aside className='tabacks-aside'>
-                    <div className="tabacks-aside-item">
+                    <aside className='tabacks-aside'>
+                        <div className="tabacks-aside-item">
 
-                        <ul>
-                            <li>
-                                <p className='tabacks-aside-text'>New
-                                    arrivals</p>
-                            </li>
-                        </ul>
-                    </div>
+                            <ul>
+                                <li>
+                                    <p className='tabacks-aside-text'>New
+                                        arrivals</p>
+                                </li>
+                            </ul>
+                        </div>
 
-                    <div className="tabacks-aside-item">
-
-
-                        <ul>
-                            <li>
-                                <p className='tabacks-aside-text'>Миксы</p>
-                            </li>
-
-                            <li>
-                                <p className='tabacks-aside-text'>Мятные</p>
-                            </li>
-
-                            <li>
-                                <p className='tabacks-aside-text'>Напитки</p>
-                            </li>
-
-                            <li>
-                                <p className='tabacks-aside-text'>Пряные</p>
-                            </li>
-
-                            <li>
-                                <p className='tabacks-aside-text'>Outdoor</p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div className="tabacks-aside-item">
-
-                        <ul>
-
-                            <li>
-                                <p className='tabacks-aside-text'>Абрикос</p>
-                            </li>
-
-                            <li>
-                                <p className='tabacks-aside-text'>Алкоголь</p>
-                            </li>
-
-                            <li>
-                                <p className='tabacks-aside-text'>Ананас</p>
-                            </li>
-                            <li>
-                                <p className='tabacks-aside-text'>Анис</p>
-                            </li>
-                            <li>
-                                <p className='tabacks-aside-text'>Груша</p>
-                            </li>
-                        </ul>
-                    </div>
+                        <div className="tabacks-aside-item">
 
 
+                            <ul>
+                                <li>
+                                    <p className='tabacks-aside-text'>Миксы</p>
+                                </li>
 
-                </aside>
+                                <li>
+                                    <p className='tabacks-aside-text'>Мятные</p>
+                                </li>
 
-                {/*Products__wrap active*/}
-                <article className="tabacks-article">
-                    
+                                <li>
+                                    <p className='tabacks-aside-text'>Напитки</p>
+                                </li>
 
-                    <Flex align={"center"} justify={"space-between"} className="Products__filters">
-                        {/* <Button onClick={handleFilter} icon={<FiFilter />}>
+                                <li>
+                                    <p className='tabacks-aside-text'>Пряные</p>
+                                </li>
+
+                                <li>
+                                    <p className='tabacks-aside-text'>Outdoor</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="tabacks-aside-item">
+
+                            <ul>
+
+                                <li>
+                                    <p className='tabacks-aside-text'>Абрикос</p>
+                                </li>
+
+                                <li>
+                                    <p className='tabacks-aside-text'>Алкоголь</p>
+                                </li>
+
+                                <li>
+                                    <p className='tabacks-aside-text'>Ананас</p>
+                                </li>
+                                <li>
+                                    <p className='tabacks-aside-text'>Анис</p>
+                                </li>
+                                <li>
+                                    <p className='tabacks-aside-text'>Груша</p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+                    </aside>
+
+                    {/*Products__wrap active*/}
+                    <article className="tabacks-article">
+
+
+                        <Flex align={"center"} justify={"space-between"} className="Products__filters">
+                            {/* <Button onClick={handleFilter} icon={<FiFilter />}>
                                     filter & sort
                                 </Button> */}
 
-                        <div className="Products__filters-right">
+                            {/* <div className="Products__filters-right">
                             <button className={`Products__filters-red`} secondary>
                                 <p bodyText={"p"}>Models</p>
                             </button>
@@ -159,15 +162,88 @@ export default function Tabacks() {
                                 <p bodyText={"p"}>products</p>
                             </button>
 
+                        </div> */}
+
+                            <div className='cards'>
+                                
+                            <div className='card-product'>
+                                    <img className='product-image' src={southVibe} alt='error' />
+                                    <b className='product-category'>Darkside</b>
+                                    <br />
+                                    <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
+                                    <hr />
+                                    <div className='product-taste'>
+                                        <p className='taste-item'>Груша</p>
+                                        <p className='taste-item'>Манго</p>
+                                    </div>
+                                </div>
+                                <div className='card-product'>
+                                    <img className='product-image' src={southVibe} alt='error' />
+                                    <b className='product-category'>Darkside</b>
+                                    <br />
+                                    <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
+                                    <hr />
+                                    <div className='product-taste'>
+                                        <p className='taste-item'>Груша</p>
+                                        <p className='taste-item'>Манго</p>
+                                    </div>
+                                </div>
+                                <div className='card-product'>
+                                    <img className='product-image' src={southVibe} alt='error' />
+                                    <b className='product-category'>Darkside</b>
+                                    <br />
+                                    <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
+                                    <hr />
+                                    <div className='product-taste'>
+                                        <p className='taste-item'>Груша</p>
+                                        <p className='taste-item'>Манго</p>
+                                    </div>
+                                </div>
+                                <div className='card-product'>
+                                    <img className='product-image' src={southVibe} alt='error' />
+                                    <b className='product-category'>Darkside</b>
+                                    <br />
+                                    <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
+                                    <hr />
+                                    <div className='product-taste'>
+                                        <p className='taste-item'>Груша</p>
+                                        <p className='taste-item'>Манго</p>
+                                    </div>
+                                </div>
+                                <div className='card-product'>
+                                    <img className='product-image' src={southVibe} alt='error' />
+                                    <b className='product-category'>Darkside</b>
+                                    <br />
+                                    <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
+                                    <hr />
+                                    <div className='product-taste'>
+                                        <p className='taste-item'>Груша</p>
+                                        <p className='taste-item'>Манго</p>
+                                    </div>
+                                </div>
+                                <div className='card-product'>
+                                    <img className='product-image' src={southVibe} alt='error' />
+                                    <b className='product-category'>Darkside</b>
+                                    <br />
+                                    <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
+                                    <hr />
+                                    <div className='product-taste'>
+                                        <p className='taste-item'>Груша</p>
+                                        <p className='taste-item'>Манго</p>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </Flex>
+
+
+                        <div className="Products__buttons">
+                            <button primary>load more products</button>
                         </div>
-                    </Flex>
-
-
-                    <div className="Products__buttons">
-                        <button primary>load more products</button>
-                    </div>
-                </article>
+                    </article>
                 </div>
+
 
 
 

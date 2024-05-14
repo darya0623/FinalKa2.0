@@ -102,9 +102,9 @@ right: 0;
 top: 300px;
 }
 
-body {
-  background: linear-gradient( #ecf2f8, white);
-}
+// body {
+//   background: linear-gradient( #ecf2f8, white);
+// }
 
 .kalyan-wrap{
   padding-top: 900px;
@@ -178,7 +178,7 @@ align-items: start;
 }
 
 .card-product {
-  width: 300px;
+  width: 270px;
 }
 
 .product-title {
@@ -223,6 +223,7 @@ height: 635px;
 
 .tabacks-wrap {
   display: flex;
+
 }
 
 .tabacks-header {
@@ -249,4 +250,53 @@ color: #5c5c6d;
 .cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tabacks-catalog {
+  background: white;
+}
+
+.tabacks-article {
+  justify-content: center;
+  width: 1000px;
+}
+
+.vector-two3{
+  position: absolute;
+//  left: 350px;
+// top: 5px;
+  width: 110px;
+  z-index: -1;
+}
+
+.create-section-one {
+  padding-top: 100px;
+  background: url(./../src/img/fogMan.png);
+  background-size: cover;
+}
+
+.title-item{
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 64px;
+color: #010624;
+text-align: end;
+}
+
+.create-desc{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+color: #5c5c6d;
+display: flex;
+justify-content: end;
+text-align: end;
+
+}
+
+.create-title {
+height: 435px;
+
 }

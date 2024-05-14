@@ -106,6 +106,19 @@ export default function Main() {
                             </div>
                         </div>
                     </div>
+                    <section className='create-section-one'>
+                        <div className='container'>
+                            <div className='create-title'>
+
+                            <h1 className='title-item'>Создай свой микс</h1>
+                            <p className='create-desc'>Мы рады тому, что способны удовлетворить даже самые притязательные 
+                            <br/>
+                            требования наших Клиентов, а в ближайших планах нашей компании, еще 
+                            <br/>
+                            больше расширить ассортимент товаров и услуг. </p>
+                            </div>
+                        </div>
+                    </section>
                 </main>
 
             </div>
