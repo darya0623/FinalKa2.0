@@ -4,7 +4,7 @@
 
 .header {
   height: 100vh;
-  background: linear-gradient( #ecf2f8, white);
+  background: linear-gradient(white, 10%, #ecf2f8, white);
 }
 
 .header-nav {
@@ -25,8 +25,8 @@
 }
 
 .nav-item:hover{
-  color: #A1C4FD;
   text-decoration: underline;
+  color: #A1C4FD;
 }
 
 
@@ -245,7 +245,7 @@ align-items: start;
       color: #010624;
     }
     
-    .cards {
+    .cards-tabacks {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -311,6 +311,7 @@ align-items: start;
       width: 270px;
       margin-bottom: 20px;
       padding: 10px;
+      border-radius: 8px;
       transition:
       
       box-shadow 1s;
@@ -329,17 +330,24 @@ align-items: start;
       .create-section-two {
         background: linear-gradient( #ecf2f8, white); 
       }
-      
-      
-      
-      // .fog-four {
-        //   position: absolute;
-        //   left: 0;
-        //   z-index: 2;
-        //   width: 100%;
-        // }
+
+      .aside {
+
+        background: #F7FAFC;
+        width: 1000px;
         
-        // .fogz {
-          //   position: relative;
-          //   bottom: 400px;
-          // }
+      }
+
+      
+      
+      .aside-wrap {
+        display: flex;
+        
+    }
+
+    .login-title {
+      font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #010624;
+    }

@@ -2,22 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 // import './style/adapt.scss';
-import App from './App';
+import App from './App.jsx';
 import {
   RouterProvider,
   createBrowserRouter
 } from "react-router-dom";
-import Main from './pages/main';
-import Tabacks from './pages/tabacks';
-import TabackInfo from './pages/tabakInfo';
-import Lounges from "./pages/lounges.js"
-import LoungeInfo from "./pages/loungeInfo.js"
-import Mixes from "./pages/mixes.js"
-import MixInfo from "./pages/mixInfo.js"
-import Mixer from "./pages/mixer.js"
-import LogIn from "./pages/login.js"
-import SignUp from "./pages/signup.js"
-import Map from './pages/map.js';
+import Main from './pages/main.jsx';
+import Tabacks from './pages/tabacks.jsx';
+import TabackInfo from './pages/tabakInfo.jsx';
+import Lounges from "./pages/lounges.jsx"
+import LoungeInfo from "./pages/loungeInfo.jsx"
+import Mixes from "./pages/mixes.jsx"
+import MixInfo from "./pages/mixInfo.jsx"
+import Mixer from "./pages/mixer.jsx"
+import LogIn from "./pages/login.jsx"
+import SignUp from "./pages/signup.jsx"
+import Map from './pages/map.jsx';
 
 
 
@@ -27,47 +27,47 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/main",
+        path: "main",
         element: <Main />
       },
       {
-        path: "/tabacks",
+        path: "tabacks",
         element: <Tabacks />
       },
       {
-        path: "/tabackInfo",
+        path: "tabackInfo",
         element: <TabackInfo />
       },
       {
-        path: "/mixes",
+        path: "mixes",
         element: <Mixes />
       },
       {
-        path: "/mixInfo",
+        path: "mixInfo",
         element: <MixInfo />
       },
       {
-        path: "/mixer",
+        path: "mixer",
         element: <Mixer />
       },
       {
-        path: "/lounges",
+        path: "lounges",
         element: <Lounges />
       },
       {
-        path: "/loungeInfo",
+        path: "loungeInfo",
         element: <LoungeInfo />
       },
       {
-        path: "/map",
+        path: "map",
         element: <Map />
       },
       {
-        path: "/login",
+        path: "login",
         element: <LogIn />
       },
       {
-        path: "/signup",
+        path: "signup",
         element: <SignUp />
       }
     ]

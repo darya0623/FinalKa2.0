@@ -64,7 +64,7 @@ export default function Main() {
                     <div className='container'>
                         <h1 className='main-title'>Популярные табаки</h1>
                         <hr className='chertochka'/>
-                        <div className='cards'>
+                        <div className='cards-tabacks'>
                             <div className='card-product'>
                                 <img className='product-image' src={southVibe} alt='error'/>
                                 <b className='product-category'>Darkside</b>

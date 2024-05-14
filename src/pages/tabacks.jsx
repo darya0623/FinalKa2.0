@@ -158,7 +158,7 @@ export default function Tabacks() {
 
                         </div> */}
 
-                            <div className='cards'>
+                            <div className='cards-tabacks'>
                                 
                             <div className='card-product'>
                                     <img className='product-image' src={southVibe} alt='error' />
