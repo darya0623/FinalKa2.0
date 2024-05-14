@@ -27,7 +27,7 @@ const App = () => {
             <a href="/mixes" className="nav-item">Миксы</a>
             <a href="/lounges" className="nav-item">Лаунжи</a>
             <a href="!#" className="nav-item">Магазины</a>
-            <a href="!#" className="nav-item">Карта</a>
+            <a href="/map" className="nav-item">Карта</a>
             <a href="!#" className="nav-item">Мои табаки</a>
             <a href='/login' className="nav-item">Войти</a>
           </nav>

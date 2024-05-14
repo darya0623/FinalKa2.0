@@ -4,6 +4,7 @@ import Kalyan from "./../img/Kalyan.png";
 import Hello from "./../img/Hello.png";
 import FogOne from "./../img/FogOne.png";
 import FogTwo from "./../img/FogTwo.png";
+
 import Portal from "./../img/Portal.png"
 import vectorOne from "./../img/vectorOne.svg"
 import vectorTwo from "./../img/vectorTwo.svg"
@@ -51,8 +52,8 @@ export default function Main() {
                                 </div>
                             </div>
 
-                            {/* <img src={FogOne} alt="error" className="hello-fog1" />
-                            <img src={FogTwo} alt="error" className="hello-fog2" /> */}
+                            <img src={FogOne} alt="error" className="hello-fog1" />
+                            <img src={FogTwo} alt="error" className="hello-fog2" />
 
                         </div>
 
@@ -110,6 +111,8 @@ export default function Main() {
                             </div>
                         </div>
                     </div>
+                   
+
                     <section className='create-section-one'>
                         <div className='container'>
                             <div className='create-title'>
@@ -121,27 +124,21 @@ export default function Main() {
                             <br/>
                             больше расширить ассортимент товаров и услуг. </p>
                             </div>
+                        
                         </div>
                     </section>
 
                     <section className='create-section-two'>
                             <div className='container'>
                                 <h1 className='create-title-popular'>Популярные табаки</h1>
-
                             </div>
                     </section>
+                    
                 </main>
 
             </div>
 
-
-
         </Fragment>
-
-
-
-
-
 
     )
 }

@@ -21,6 +21,7 @@
 
 .nav-item {
   color: #010624;
+  transition: all 0.5s;
 }
 
 .nav-item:hover{
@@ -177,23 +178,20 @@ justify-content: end;
 align-items: start;
 }
 
-.card-product {
-  width: 270px;
-}
 
 .product-title {
   font-family: var(--font-family);
-font-weight: 400;
-font-size: 20px;
-color: #000;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
 }
 
 .product-category {
   font-family: var(--font-family);
-font-weight: 700;
-font-size: 14px;
-text-transform: uppercase;
-color: #a1c4fd;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #a1c4fd;
 }
 
 .product-taste {
@@ -205,102 +203,143 @@ color: #a1c4fd;
   justify-content: center;
   background: #f2f6fa;
   border-radius: 50px;
-width: 70px;
-height: 26px;
+  width: 70px;
+  height: 26px;
 }
 
 .tabacks-aside {
   width: 255px;
-height: 635px;
+  height: 635px;
 }
 
 // .tabacks-article {
-//   display: flex;
-//   width: 1000px;
-// }
-// .tabacks-aside {
-//   display: block;
+  //   display: flex;
+  //   width: 1000px;
+  // }
+  // .tabacks-aside {
+    //   display: block;
+    
+    .tabacks-wrap {
+      display: flex;
+      
+    }
+    
+    .tabacks-header {
+      
+      text-align: center;
+    }
+    
+    .header-desc {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 150%;
+      text-align: center;
+      color: #5c5c6d;
+    }
+    .header-title {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 24px;
+      text-align: center;
+      color: #010624;
+    }
+    
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    
+    .tabacks-catalog {
+      background: white;
+    }
+    
+    .tabacks-article {
+      justify-content: center;
+      width: 1000px;
+    }
+    
+    .vector-two3{
+      position: absolute;
+      //  left: 350px;
+      // top: 5px;
+      width: 110px;
+      z-index: -1;
+    }
+    
+    .create-section-one {
+      padding-top: 100px;
+      background: url(./../src/img/fogMan.png);
+      background-size: cover;
+    }
+    
+    .title-item{
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 64px;
+      color: #010624;
+      text-align: end;
+      margin-bottom: 20px;
+    }
+    
+    .create-desc{
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      color: #5c5c6d;
+      display: flex;
+      justify-content: end;
+      text-align: end;
+      
+    }
+    
+    .create-title-popular {
+      text-align: center;
+    }
+    
+    .create-title{
+      height: 435px;
+    }
+    
+    .main {
+      margin-top: 300px;
+    }
 
-.tabacks-wrap {
-  display: flex;
-
-}
-
-.tabacks-header {
-
- text-align: center;
-}
-
-.header-desc {
-  font-family: var(--font-family);
-font-weight: 400;
-font-size: 15px;
-line-height: 150%;
-text-align: center;
-color: #5c5c6d;
-}
-.header-title {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 24px;
-  text-align: center;
-  color: #010624;
-}
-
-.cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.tabacks-catalog {
-  background: white;
-}
-
-.tabacks-article {
-  justify-content: center;
-  width: 1000px;
-}
-
-.vector-two3{
-  position: absolute;
-//  left: 350px;
-// top: 5px;
-  width: 110px;
-  z-index: -1;
-}
-
-.create-section-one {
-  padding-top: 100px;
-  background: url(./../src/img/fogMan.png);
-  background-size: cover;
-}
-
-.title-item{
-  font-family: var(--font-family);
-font-weight: 700;
-font-size: 64px;
-color: #010624;
-text-align: end;
-margin-bottom: 20px;
-}
-
-.create-desc{
-  font-family: var(--font-family);
-font-weight: 400;
-font-size: 18px;
-line-height: 150%;
-color: #5c5c6d;
-display: flex;
-justify-content: end;
-text-align: end;
-
-}
-
-.create-title-popular {
-text-align: center;
-}
-
-.create-title{
-  height: 435px;
-}
+    .card-product {
+      width: 270px;
+      margin-bottom: 20px;
+      padding: 10px;
+      transition:
+      
+      box-shadow 1s;
+    }
+    
+    .card-product:hover{
+      border-radius: 8px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+      
+    }
+    
+    .product-image {
+      width: 200px;
+      margin: auto;}
+      
+      .create-section-two {
+        background: linear-gradient( #ecf2f8, white); 
+      }
+      
+      
+      
+      // .fog-four {
+        //   position: absolute;
+        //   left: 0;
+        //   z-index: 2;
+        //   width: 100%;
+        // }
+        
+        // .fogz {
+          //   position: relative;
+          //   bottom: 400px;
+          // }

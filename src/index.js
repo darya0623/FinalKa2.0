@@ -17,7 +17,7 @@ import MixInfo from "./pages/mixInfo.js"
 import Mixer from "./pages/mixer.js"
 import LogIn from "./pages/login.js"
 import SignUp from "./pages/signup.js"
-
+import Map from './pages/map.js';
 
 
 
@@ -57,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: "/loungeInfo",
         element: <LoungeInfo />
+      },
+      {
+        path: "/map",
+        element: <Map />
       },
       {
         path: "/login",
