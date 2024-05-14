@@ -282,6 +282,7 @@ font-weight: 700;
 font-size: 64px;
 color: #010624;
 text-align: end;
+margin-bottom: 20px;
 }
 
 .create-desc{
@@ -296,7 +297,10 @@ text-align: end;
 
 }
 
-.create-title {
-height: 435px;
+.create-title-popular {
+text-align: center;
+}
 
+.create-title{
+  height: 435px;
 }

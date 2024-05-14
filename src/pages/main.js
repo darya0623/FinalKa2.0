@@ -8,11 +8,15 @@ import Portal from "./../img/Portal.png"
 import vectorOne from "./../img/vectorOne.svg"
 import vectorTwo from "./../img/vectorTwo.svg"
 import southVibe from "./../img/southVibe.png"
+import { Helmet } from 'react-helmet';
 import "./../index.scss"
 
 export default function Main() {
     return (
         <Fragment>
+            <Helmet>
+            <title>Hookah - Главная</title>
+        </Helmet>
 
             <div className='main-wrap'>
 
@@ -118,6 +122,13 @@ export default function Main() {
                             больше расширить ассортимент товаров и услуг. </p>
                             </div>
                         </div>
+                    </section>
+
+                    <section className='create-section-two'>
+                            <div className='container'>
+                                <h1 className='create-title-popular'>Популярные табаки</h1>
+
+                            </div>
                     </section>
                 </main>
 

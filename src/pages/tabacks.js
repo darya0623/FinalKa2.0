@@ -2,73 +2,68 @@ import React from "react";
 import { Fragment, useState, useEffect, useContext } from "react";
 import { Button, Checkbox, Flex, Typography } from "antd";
 import { Breadcrumb } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 import southVibe from "./../img/southVibe.png"
 
 export default function Tabacks() {
+//     const container = document.querySelector("#categories-container")
+//     const inputCatalogSearch = document.querySelector("#catalog-search")
 
-    // const [IsShow, setIsShow] = useState(false);
+//     GetAPIFunc("/tabacks").then(data => {
 
-    //     const [Products, setProducts] = useState([]);
+//         container.innerHTML = ""
 
-    //     const handleFilter = () => setIsShow(prev => !prev);
+//         data.map(item => {
+//             const { id, category, name, image } = item
+//             container.insertAdjacentHTML("beforeend", `
+//             <div class="col col-12 col-md-6 col-lg-4 mb-3">
 
-    //     const handleProducts = () => {
-    //         setProducts(() => ProductsData && ProductsData?.length ?
-    //             ProductsData : []
-    //         )
-    //     }
+//                 <a href="./catalog.html?id=${id}" class="card-link">
+//                     <div class="card">
+//                         <img src="${image}" class="card-img-top" alt="phones">
+//                         <div class="card-body">
+//                             <h5 class="card-title">${name}</h5>
+//                         </div>
+//                     </div>
+//                 </a>
+//             </div>
+//             `)
+//         })
+//     })
 
-    //     const handleShopBy = e => {
-    //         const value = e.target.dataset.category;
+//     inputCatalogSearch.addEventListener("input", (e)=>{
+//         GetAPIFunc(`/catalog?q=${e.target.value}`).then(data => {
 
-    //         const products = ProductsData?.filter(item => {
+//             container.innerHTML = ""
+    
+//             data.map(item => {
+//                 const { id, category, name, image } = item
+//                 container.insertAdjacentHTML("beforeend", `
+//                 <div className='card-product'>
+//                                     <img className='product-image' src={southVibe} alt='error' />
+//                                     <b className='product-category'>Darkside</b>
+//                                     <br />
+//                                     <a href='/tabackInfo' className='product-title'>${product.title}</a>
+//                                     <hr />
+//                                     <div className='product-taste'>
+//                                         <p className='taste-item'>Груша</p>
+//                                         <p className='taste-item'>Манго</p>
+//                                     </div>
+//                                 </div>
+//                 `)
+//             })
+//         })
+//     })    
+// }
 
-    //             if (item?.category?.taste?.includes(
-    //                 value
-    //             )) {
-    //                 return item;
-    //             }
-    //         })
-
-    //         setProducts(() => products && products.length ? [...products] : [])
-    //     }
-
-
-    //     //     const products = ProductsData?.filter(item => {
-    //     //         if (item?.category?.gender?.includes(
-    //     //             value
-    //     //         )) {
-    //     //             return item;
-    //     //         }
-    //     //     })
-
-    //     //     setProducts(() => products && products.length ? [...products] : [])
-    //     // }
-
-    //     useEffect(() => {
-    //         setProducts(() => ProductsData && ProductsData?.length ?
-    //             ProductsData : []
-    //         )
-    //     }, [ProductsData?.length])
-
-    //     const product = Products?.map((product, i) => {
-    //         return <Fragment key={i}>
-    //             <Cart href={`/catalog/product/${product.id}`}
-    //                 type={"product"}
-    //                 image={product.image}
-    //                 title={product.title}
-    //                 taste={product.category?.taste}
-    //             />
-    //         </Fragment>
-    //     })
-
-    //     const { ProductsData } = useContext(Context);
     return (
-
 
 
         <Fragment>
             <Breadcrumb />
+            <Helmet>
+            <title>Hookah - Tabacks</title>
+        </Helmet>
             <div className="tabacks-catalog">
 
             </div>
