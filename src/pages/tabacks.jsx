@@ -4,6 +4,7 @@ import { Button, Checkbox, Flex, Typography } from "antd";
 import { Breadcrumb } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import southVibe from "./../img/southVibe.png"
+import { Link } from "react-router-dom";
 
 export default function Tabacks() {
 //     const container = document.querySelector("#categories-container")
@@ -18,7 +19,7 @@ export default function Tabacks() {
 //             container.insertAdjacentHTML("beforeend", `
 //             <div class="col col-12 col-md-6 col-lg-4 mb-3">
 
-//                 <a href="./catalog.html?id=${id}" class="card-link">
+//                 <a to="./catalog.html?id=${id}" class="card-link">
 //                     <div class="card">
 //                         <img src="${image}" class="card-img-top" alt="phones">
 //                         <div class="card-body">
@@ -43,7 +44,7 @@ export default function Tabacks() {
 //                                     <img className='product-image' src={southVibe} alt='error' />
 //                                     <b className='product-category'>Darkside</b>
 //                                     <br />
-//                                     <a href='/tabackInfo' className='product-title'>${product.title}</a>
+//                                     <a to='/tabacks/product/:id' className='product-title'>${product.title}</a>
 //                                     <hr />
 //                                     <div className='product-taste'>
 //                                         <p className='taste-item'>Груша</p>
@@ -64,9 +65,7 @@ export default function Tabacks() {
             <Helmet>
             <title>Hookah - Tabacks</title>
         </Helmet>
-            <div className="tabacks-catalog">
-
-            </div>
+           
 
             <div className="container">
                 <header className="tabacks-header">
@@ -143,7 +142,7 @@ export default function Tabacks() {
                     <article className="tabacks-article">
 
 
-                        <Flex align={"center"} justify={"space-between"} className="Products__filters">
+             
                             {/* <Button onClick={handleFilter} icon={<FiFilter />}>
                                     filter & sort
                                 </Button> */}
@@ -164,7 +163,7 @@ export default function Tabacks() {
                                     <img className='product-image' src={southVibe} alt='error' />
                                     <b className='product-category'>Darkside</b>
                                     <br />
-                                    <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
+                                    <Link to='/tabacks/product/:id' className='product-title'>Южный Вайб</Link>
                                     <hr />
                                     <div className='product-taste'>
                                         <p className='taste-item'>Груша</p>
@@ -175,7 +174,7 @@ export default function Tabacks() {
                                     <img className='product-image' src={southVibe} alt='error' />
                                     <b className='product-category'>Darkside</b>
                                     <br />
-                                    <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
+                                    <Link to='/tabacks/product/' className='product-title'>Южный Вайб</Link>
                                     <hr />
                                     <div className='product-taste'>
                                         <p className='taste-item'>Груша</p>
@@ -186,7 +185,7 @@ export default function Tabacks() {
                                     <img className='product-image' src={southVibe} alt='error' />
                                     <b className='product-category'>Darkside</b>
                                     <br />
-                                    <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
+                                    <Link to='/tabacks/product/:id' className='product-title'>Южный Вайб</Link>
                                     <hr />
                                     <div className='product-taste'>
                                         <p className='taste-item'>Груша</p>
@@ -197,7 +196,7 @@ export default function Tabacks() {
                                     <img className='product-image' src={southVibe} alt='error' />
                                     <b className='product-category'>Darkside</b>
                                     <br />
-                                    <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
+                                    <Link to='/tabacks/product/:id' className='product-title'>Южный Вайб</Link>
                                     <hr />
                                     <div className='product-taste'>
                                         <p className='taste-item'>Груша</p>
@@ -208,7 +207,7 @@ export default function Tabacks() {
                                     <img className='product-image' src={southVibe} alt='error' />
                                     <b className='product-category'>Darkside</b>
                                     <br />
-                                    <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
+                                    <Link to='/tabacks/product/:id' className='product-title'>Южный Вайб</Link>
                                     <hr />
                                     <div className='product-taste'>
                                         <p className='taste-item'>Груша</p>
@@ -219,7 +218,7 @@ export default function Tabacks() {
                                     <img className='product-image' src={southVibe} alt='error' />
                                     <b className='product-category'>Darkside</b>
                                     <br />
-                                    <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
+                                    <a to='/tabacks/product/:id' className='product-title'>Южный Вайб</a>
                                     <hr />
                                     <div className='product-taste'>
                                         <p className='taste-item'>Груша</p>
@@ -229,7 +228,7 @@ export default function Tabacks() {
                                 
 
                             </div>
-                        </Flex>
+                   
 
 
                         <div className="Products__buttons">

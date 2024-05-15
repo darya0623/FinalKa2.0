@@ -7,13 +7,13 @@ const BreadCrumb = () => (
   <Breadcrumb
     items={[
       {
-        title: <a href="/main">Main</a>,
+        title: <a href="/">Main</a>,
       },
       {
         title: <a href="/tabacks">Tabacks</a>,
       },
       {
-        title: <a href="/tabackInfo">TabackInfo</a>,
+        title: <a href="/tabacks/product/:id">TabackInfo</a>,
       },
       {
         title: <a href="/lounges">Lounges</a>,

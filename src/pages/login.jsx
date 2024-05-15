@@ -7,8 +7,8 @@ export default function LogIn() {
     <Fragment>
       <main>
         <aside className="aside">
-          <div className="container">
             <div className="aside-wrap">
+          <div className="container">
 
             <h1 className="login-title">Добро пожаловать на Hookah Portal</h1>
             </div>

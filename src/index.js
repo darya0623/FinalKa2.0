@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 // import './style/adapt.scss';
-import App from './App.jsx';
+import App from './App.js';
 import {
   RouterProvider,
   createBrowserRouter
@@ -18,7 +18,7 @@ import Mixer from "./pages/mixer.jsx"
 import LogIn from "./pages/login.jsx"
 import SignUp from "./pages/signup.jsx"
 import Map from './pages/map.jsx';
-
+import NotFound from './pages/notFound.jsx';
 
 
 const router = createBrowserRouter([
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "main",
+        path: "/",
         element: <Main />
       },
       {
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
         element: <Tabacks />
       },
       {
-        path: "tabackInfo",
+        path: "tabacks/product/:id",
         element: <TabackInfo />
       },
       {
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
         element: <Mixes />
       },
       {
-        path: "mixInfo",
+        path: "mixes/product/:id",
         element: <MixInfo />
       },
       {
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
         element: <Lounges />
       },
       {
-        path: "loungeInfo",
+        path: "lounde/info",
         element: <LoungeInfo />
       },
       {
@@ -69,6 +69,10 @@ const router = createBrowserRouter([
       {
         path: "signup",
         element: <SignUp />
+      },
+      {
+        path: "*",
+        element: <NotFound />
       }
     ]
   }

@@ -341,7 +341,8 @@ align-items: start;
       
       
       .aside-wrap {
-        display: flex;
+        
+        margin: 0 auto;
         
     }
 
@@ -350,4 +351,10 @@ align-items: start;
 font-weight: 400;
 font-size: 24px;
 color: #010624;
+    }
+
+    .not-found {
+      background: url(./../src/img/404.webp);
+      background-size: cover;
+      height: 130vh;
     }
