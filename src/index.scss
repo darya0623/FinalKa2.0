@@ -401,3 +401,35 @@ font-size: 10px;
 text-transform: uppercase;
 color: #ff0013;
 }
+
+
+.cards-mixes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mixes-catalog {
+  background: white;
+}
+
+.mixes-article {
+  justify-content: center;
+  width: 1000px;
+}
+
+
+.mixes-wrap {
+  display: flex;
+}
+
+.mixes-header {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.mixes-aside {
+  width: 255px;
+  height: 635px;
+}
+

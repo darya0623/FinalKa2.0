@@ -19,54 +19,42 @@ const Lounges = () => {
         <div className="lounges-wrap">
           <aside className="lounges-aside">
             <div className="lounges-aside-item">
-              <ul>
-                <li>
+              
                   <h4 className="lounges-aside-text">Фильтры</h4>
-                </li>
-              </ul>
+               
             </div>
 
             <div className="lounges-aside-item">
-              <ul>
-                <li>
+             
                   <p className="lounges-aside-text">Миксы <input type="checkbox" /></p>
-                </li>
-
-                <li>
+              
                   <p className="lounges-aside-text">Мятные <input type="checkbox" /></p>
-                </li>
-
-                <li>
+                
                   <p className="lounges-aside-text">Напитки <input type="checkbox" /></p>
-                </li>
-
-                <li>
+                
                   <p className="lounges-aside-text">Пряные <input type="checkbox" /></p>
-                </li>
-              </ul>
+              
             </div>
 
             <div className="lounges-aside-item">
-              <ul>
-                <li>
+             
+                  <h4 className="lounges-aside-text">Фильтры</h4>
+               
+            </div>
+            
+            <div className="lounges-aside-item">
+              
                 <p className="lounges-aside-text">Алкоголь <input type="checkbox" /></p>
                 
-                </li>
-
-                <li>
+               
                   <p className="lounges-aside-text">Алкоголь <input type="checkbox" /></p>
-                </li>
-
-                <li>
+                
                   <p className="lounges-aside-text">Ананас <input type="checkbox" /></p>
-                </li>
-                <li>
-                  <p className="lounges-aside-text">Анис</p>
-                </li>
-                <li>
-                  <p className="lounges-aside-text">Груша</p>
-                </li>
-              </ul>
+                
+                  <p className="lounges-aside-text">Анис <input type="checkbox" /></p>
+             
+                  <p className="lounges-aside-text">Груша <input type="checkbox" /></p>
+              
             </div>
           </aside>
 
