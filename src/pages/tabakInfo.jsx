@@ -11,7 +11,6 @@ export default function TabackInfo() {
             <div className="t">
                 <div className="container">
 
-<div className="vjdufdhjdhf">vjhgsdhfgsdhgfsdh</div>
 
                 </div>
 

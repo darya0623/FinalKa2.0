@@ -70,6 +70,7 @@ export default function Tabacks() {
             <div className="container">
                 <header className="tabacks-header">
                     <h1 className="header-title">Табаки</h1>
+                    <hr className="chertochka" />
                     <h3 className="header-desc">Один из крупнейших производителей табака и аксессуаров для кальянов в Российской Федерации</h3>
                 </header>
                 <div className="tabacks-wrap">
@@ -231,9 +232,9 @@ export default function Tabacks() {
                    
 
 
-                        <div className="Products__buttons">
+                        {/* <div className="Products__buttons">
                             <button primary>load more products</button>
-                        </div>
+                        </div> */}
                     </article>
                 </div>
 
