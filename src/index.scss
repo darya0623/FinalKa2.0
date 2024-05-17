@@ -31,12 +31,17 @@
 .footer {
   background-color: #f2f6fa;
   height: 115px;
+  padding: 23px 0;
+}
+
+.footer-wrap {
+  width: 572px;
 }
 
 .footer-nav {
-  width: 572px;
+
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .f-nav-item {
@@ -300,7 +305,7 @@
 }
 
 .card-product {
-  width: 270px;
+  width: 300px;
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 8px;
@@ -365,7 +370,7 @@
 
 .cards-lounges {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 

@@ -12,7 +12,7 @@ export default function Map() {
 
           <h1 className="main-title">Карта</h1>
           <hr className="chertochka" />
-          <video autoPlay muted loop id="mapVid">
+          <video autoPlay loop id="mapVid">
             <source src={MapVideo} type="video/mp4" />
           </video>
           </div>

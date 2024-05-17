@@ -51,6 +51,8 @@ const App = () => {
 
             <div className='container'>
 
+              <div className='footer-wrap'>
+
             <nav className="footer-nav">
             <Link to="/tabacks" className="f-nav-item">Табаки</Link>
             <Link to="/mixes" className="f-nav-item">Миксы</Link>
@@ -58,6 +60,10 @@ const App = () => {
             <Link to="!#" className="f-nav-item">Магазины</Link>
             <Link to="!#" className="f-nav-item">Карта</Link>
           </nav>
+
+          <p> &copy; 2021 HookahPortal.ru</p>
+              </div>
+
 
             </div>
 

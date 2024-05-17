@@ -4,7 +4,9 @@ import Kalyan from "./../img/Kalyan.png";
 import Hello from "./../img/Hello.png";
 import FogOne from "./../img/FogOne.png";
 import FogTwo from "./../img/FogTwo.png";
-
+import { Link } from 'react-router-dom';
+import LoungeImage from "./../img/lounge.png";
+import IdealBreakfast from "./../img/idealBreakfast.png"
 import Portal from "./../img/Portal.png"
 import vectorOne from "./../img/vectorOne.svg"
 import vectorTwo from "./../img/vectorTwo.svg"
@@ -16,8 +18,8 @@ export default function Main() {
     return (
         <Fragment>
             <Helmet>
-            <title>Hookah - Главная</title>
-        </Helmet>
+                <title>Hookah - Главная</title>
+            </Helmet>
 
             <div className='main-wrap'>
 
@@ -48,7 +50,7 @@ export default function Main() {
                                                 своими миксами</p>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
 
@@ -63,47 +65,47 @@ export default function Main() {
                 <main className='main'>
                     <div className='container'>
                         <h1 className='main-title'>Популярные табаки</h1>
-                        <hr className='chertochka'/>
+                        <hr className='chertochka' />
                         <div className='cards-tabacks'>
                             <div className='card-product'>
-                                <img className='product-image' src={southVibe} alt='error'/>
+                                <img className='product-image' src={southVibe} alt='error' />
                                 <b className='product-category'>Darkside</b>
-                                <br/>
+                                <br />
                                 <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
-                                <hr/>
+                                <hr />
                                 <div className='product-taste'>
                                     <p className='taste-item'>Груша</p>
                                     <p className='taste-item'>Манго</p>
                                 </div>
                             </div>
                             <div className='card-product'>
-                                <img className='product-image' src={southVibe} alt='error'/>
+                                <img className='product-image' src={southVibe} alt='error' />
                                 <b className='product-category'>Darkside</b>
-                                <br/>
+                                <br />
                                 <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
-                                <hr/>
+                                <hr />
                                 <div className='product-taste'>
                                     <p className='taste-item'>Груша</p>
                                     <p className='taste-item'>Манго</p>
                                 </div>
                             </div>
                             <div className='card-product'>
-                                <img className='product-image' src={southVibe} alt='error'/>
+                                <img className='product-image' src={southVibe} alt='error' />
                                 <b className='product-category'>Darkside</b>
-                                <br/>
+                                <br />
                                 <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
-                                <hr/>
+                                <hr />
                                 <div className='product-taste'>
                                     <p className='taste-item'>Груша</p>
                                     <p className='taste-item'>Манго</p>
                                 </div>
                             </div>
                             <div className='card-product'>
-                                <img className='product-image' src={southVibe} alt='error'/>
+                                <img className='product-image' src={southVibe} alt='error' />
                                 <b className='product-category'>Darkside</b>
-                                <br/>
+                                <br />
                                 <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
-                                <hr/>
+                                <hr />
                                 <div className='product-taste'>
                                     <p className='taste-item'>Груша</p>
                                     <p className='taste-item'>Манго</p>
@@ -111,29 +113,103 @@ export default function Main() {
                             </div>
                         </div>
                     </div>
-                   
+
+                    <h1 className='main-title'>Популярные табаки</h1>
+
 
                     <section className='create-section-one'>
                         <div className='container'>
                             <div className='create-title'>
 
-                            <h1 className='title-item'>Создай свой микс</h1>
-                            <p className='create-desc'>Мы рады тому, что способны удовлетворить даже самые притязательные 
-                            <br/>
-                            требования наших Клиентов, а в ближайших планах нашей компании, еще 
-                            <br/>
-                            больше расширить ассортимент товаров и услуг. </p>
+                                <h1 className='title-item'>Создай свой микс</h1>
+                                <p className='create-desc'>Мы рады тому, что способны удовлетворить даже самые притязательные
+                                    <br />
+                                    требования наших Клиентов, а в ближайших планах нашей компании, еще
+                                    <br />
+                                    больше расширить ассортимент товаров и услуг. </p>
                             </div>
-                        
+
                         </div>
                     </section>
 
                     <section className='create-section-two'>
-                            <div className='container'>
-                                <h1 className='create-title-popular'>Популярные табаки</h1>
+                        <div className='container'>
+                            <h1 className='create-title-popular'>Популярные табаки</h1>
+
+                            <div className="cards-mixes">
+                                <div className="card-product">
+                                    <img className="product-image" src={IdealBreakfast} alt="error" />
+                                    <b className="product-loc">Лубянка</b>
+                                    <br />
+                                    <Link to="/mixes/product/:id" className="product-title">
+                                        Идеальный завтрак
+                                    </Link>
+                                    <hr />
+                                    <div className="product-price"></div>
+                                </div>
+                                <div className="card-product">
+                                    <img className="product-image" src={IdealBreakfast} alt="error" />
+                                    <b className="product-loc">Лубянка</b>
+                                    <br />
+                                    <Link to="/mixes/product/" className="product-title">
+                                        Идеальный завтрак
+                                    </Link>
+                                    <hr />
+                                    <div className="product-price"></div>
+                                </div>
+                                <div className="card-product">
+                                    <img className="product-image" src={IdealBreakfast} alt="error" />
+                                    <b className="product-new">НОВИНКА</b>
+                                    <br />
+                                    <Link to="/mixes/product/:id" className="product-title">
+                                        Идеальный завтрак
+                                    </Link>
+                                    <hr />
+                                    <div className="product-price"></div>
+                                </div>
+                           
                             </div>
+
+                            <div className="cards-lounges">
+                                <div className="card-product">
+                                    <img className="product-image" src={LoungeImage} alt="error" />
+                                    <b className="product-loc">Лубянка</b>
+                                    <br />
+                                    <Link to="/lounges/product/:id" className="product-title">
+                                        МЯТА LOUNGE На Лубянке
+                                    </Link>
+                                    <hr />
+                                    <div className="product-price"></div>
+                                </div>
+                                <div className="card-product">
+                                    <img className="product-image" src={LoungeImage} alt="error" />
+                                    <b className="product-loc">Лубянка</b>
+                                    <br />
+                                    <Link to="/lounges/product/" className="product-title">
+                                        МЯТА LOUNGE На Лубянке
+                                    </Link>
+                                    <hr />
+                                    <div className="product-price"></div>
+                                </div>
+                                <div className="card-product">
+                                    <img className="product-image" src={LoungeImage} alt="error" />
+                                    <b className="product-loc">Лубянка</b>
+                                    <br />
+                                    <Link to="/lounges/product/:id" className="product-title">
+                                        МЯТА LOUNGE На Лубянке
+                                    </Link>
+                                    <hr />
+                                    <div className="product-price"></div>
+                                </div>
+
+                            </div>
+
+                          
+
+                        </div>
                     </section>
-                    
+
+
                 </main>
 
             </div>
