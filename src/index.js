@@ -19,6 +19,7 @@ import LogIn from "./pages/login.jsx"
 import SignUp from "./pages/signup.jsx"
 import Map from './pages/map.jsx';
 import NotFound from './pages/notFound.jsx';
+import Admin from './pages/admin/admin.jsx';
 
 
 const router = createBrowserRouter([
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Main />
+      },
+      {
+        path: "/admin",
+        element: <Admin />
       },
       {
         path: "tabacks",

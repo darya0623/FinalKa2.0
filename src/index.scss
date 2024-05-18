@@ -329,11 +329,32 @@
 
 .aside {
   background: #f7fafc;
-  width: 1000px;
+
 }
 
 .aside-wrap {
-  margin: 0 auto;
+  display: flex;
+}
+
+.login-text {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 15px;
+line-height: 150%;
+color: #5c5c6d;
+}
+
+.btn-image {
+  width: 20px;
+}
+
+.login-btn {
+  border-radius: 100%;
+fill: #fff;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.02);
+width: 50px;
+height: 50px;
+
 }
 
 .login-title {
@@ -410,7 +431,7 @@ color: #ff0013;
 
 .cards-mixes {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
