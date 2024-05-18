@@ -5,6 +5,7 @@ import { Breadcrumb } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import southVibe from "./../img/southVibe.png";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 export default function Tabacks() {
   //     const container = document.querySelector("#categories-container")
@@ -56,6 +57,17 @@ export default function Tabacks() {
   //         })
   //     })
   // }
+
+
+
+    const [productData, setProductData] = useState([]);
+  
+    useEffect(() => {
+      axios.get(`http://localhost:3000/products/1`) // Предположим, что нам нужна информация о продукте с id=1
+        .then(response => setProductData(response.data))
+        .catch(error => console.error('Error fetching product data:', error));
+    }, []);
+  
 
   return (
     <Fragment>
@@ -121,84 +133,20 @@ export default function Tabacks() {
                         </div> */}
 
             <div className="cards-tabacks">
-              <div className="card-product">
-                <img className="product-image" src={southVibe} alt="error" />
-                <b className="product-category">Darkside</b>
+              <div className="card-product" key={productData.id}>
+                <img className="product-image" src={productData.photo} alt="error" />
+                <b className="product-category">{productData.category?.categoryName}</b>
                 <br />
                 <Link to="/tabacks/product/:id" className="product-title">
-                  Южный Вайб
+                  {productData.title}
                 </Link>
                 <hr />
                 <div className="product-taste">
-                  <p className="taste-item">Груша</p>
+                  <p className="taste-item">{productData.category?.taste}</p>
                   <p className="taste-item">Манго</p>
                 </div>
               </div>
-              <div className="card-product">
-                <img className="product-image" src={southVibe} alt="error" />
-                <b className="product-category">Darkside</b>
-                <br />
-                <Link to="/tabacks/product/" className="product-title">
-                  Южный Вайб
-                </Link>
-                <hr />
-                <div className="product-taste">
-                  <p className="taste-item">Груша</p>
-                  <p className="taste-item">Манго</p>
-                </div>
-              </div>
-              <div className="card-product">
-                <img className="product-image" src={southVibe} alt="error" />
-                <b className="product-category">Darkside</b>
-                <br />
-                <Link to="/tabacks/product/:id" className="product-title">
-                  Южный Вайб
-                </Link>
-                <hr />
-                <div className="product-taste">
-                  <p className="taste-item">Груша</p>
-                  <p className="taste-item">Манго</p>
-                </div>
-              </div>
-              <div className="card-product">
-                <img className="product-image" src={southVibe} alt="error" />
-                <b className="product-category">Darkside</b>
-                <br />
-                <Link to="/tabacks/product/:id" className="product-title">
-                  Южный Вайб
-                </Link>
-                <hr />
-                <div className="product-taste">
-                  <p className="taste-item">Груша</p>
-                  <p className="taste-item">Манго</p>
-                </div>
-              </div>
-              <div className="card-product">
-                <img className="product-image" src={southVibe} alt="error" />
-                <b className="product-category">Darkside</b>
-                <br />
-                <Link to="/tabacks/product/:id" className="product-title">
-                  Южный Вайб
-                </Link>
-                <hr />
-                <div className="product-taste">
-                  <p className="taste-item">Груша</p>
-                  <p className="taste-item">Манго</p>
-                </div>
-              </div>
-              <div className="card-product">
-                <img className="product-image" src={southVibe} alt="error" />
-                <b className="product-category">Darkside</b>
-                <br />
-                <a to="/tabacks/product/:id" className="product-title">
-                  Южный Вайб
-                </a>
-                <hr />
-                <div className="product-taste">
-                  <p className="taste-item">Груша</p>
-                  <p className="taste-item">Манго</p>
-                </div>
-              </div>
+             
             </div>
 
             {/* <div className="Products__buttons">

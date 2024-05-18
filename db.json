@@ -6,11 +6,11 @@
   "products": [
     {
       "id": "1",
-      "image": "/images/southVibe.png",
+      "photo": "/images/southVibe.png",
       "title": "Южный Вайб",
       "description": " Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Оксмокс заглавных осталось журчит своих дороге бросил точках пунктуация текста первую образ, страна использовало они заголовок имеет но проектах назад необходимыми своего!",
       "category": {
-        "category-name": "Darkside",
+        "categoryName": "Darkside",
         "taste": [
           "Манго",
           "Груша"
@@ -19,10 +19,10 @@
     },
     {
       "id": "2",
-      "image": "/images.pomegranate.png",
+      "photo": "/images.pomegranate.png",
       "title": "Pomegranate",
       "category": {
-        "category-name": "Duft",
+        "categoryName": "Duft",
         "taste": [
           "Груша",
           "Манго",
@@ -34,10 +34,10 @@
     },
     {
       "id": "3",
-      "image": "/images.pomegranate.png",
+      "photo": "/images.pomegranate.png",
       "title": "Pomegranate",
       "category": {
-        "category-name": "Duft",
+        "categoryName": "Duft",
         "taste": [
           "Груша"
         ]
@@ -45,11 +45,11 @@
     },
     {
       "id": "4",
-      "image": "/images/cereal.png",
+      "photo": "/images/cereal.png",
       "title": "Южный Вайб",
       "description": " Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Оксмокс заглавных осталось журчит своих дороге бросил точках пунктуация текста первую образ, страна использовало они заголовок имеет но проектах назад необходимыми своего! Семантика выйти все, даль семь прямо своих lorem несколько великий жизни маленькая которой решила переулка подзаголовок продолжил рот города наш подпоясал ты меня они свое вопроса ему там?",
       "category": {
-        "category-name": "Tangiers Special",
+        "categoryName": "Tangiers Special",
         "taste": [
           "Манго",
           "Груша"
@@ -60,11 +60,11 @@
   "mixes": [
     {
       "id": "1",
-      "image": "/images/idealBreakfast.png",
+      "photo": "/images/idealBreakfast.png",
       "title": "Идеальный завтрак",
       "description": " Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Оксмокс заглавных осталось журчит своих дороге бросил точках пунктуация текста первую образ, страна использовало они заголовок имеет но проектах назад необходимыми своего!",
       "category": {
-        "category-name": "Darkside",
+        "categoryName": "Darkside",
         "taste": [
           "Манго",
           "Груша"

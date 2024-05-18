@@ -2,8 +2,19 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 export default function Admin() {
-  const [productName, setProductName] = useState('');
+  const [productTitle, setProductTitle] = useState('');
+  const [productImg, setProductImg] = useState('');
   const [products, setProducts] = useState([]);
+  
+
+//   const file = inputProductImageElement.files[0]
+
+//   if (file.type === "image/jpeg" || file.type === "image/jpg" || file.type === "image/png") {
+//       const readerFile = new FileReader()
+
+//       readerFile.addEventListener("load", () => {
+//           productData.image = readerFile.result
+//       }),
 
   useEffect(() => {
     axios.get('http://localhost:3000/products')
@@ -11,18 +22,25 @@ export default function Admin() {
       .catch(error => console.error('Error fetching products:', error));
   }, []);
 
+  
+
   const addProduct = () => {
-    if (!productName.trim()) {
-      alert('Введите название продукта.');
+    if (!productTitle.trim() && !productImg.trim() && productImg.type !== "image/jpeg" || productImg.type === "image/jpg" || productImg.type === "image/png") {
+      alert('Ощипка');
       return;
     }
 
-    const newProduct = { name: productName.trim() };
+    const newProduct = { 
+        name: productTitle.trim(),   
+        image: productImg.trim()
+    };
+    
 
     axios.post('http://localhost:3000/products', newProduct)
       .then(response => {
         setProducts([...products, response.data]);
-        setProductName('');
+        setProductTitle('');
+        setProductImg('')
       })
       .catch(error => console.error('Error adding product:', error));
   };
@@ -42,8 +60,14 @@ export default function Admin() {
       <input
         type="text"
         placeholder="Введите название продукта"
-        value={productName}
-        onChange={(e) => setProductName(e.target.value)}
+        value={productTitle}
+        onChange={(e) => setProductTitle(e.target.value)}
+        style={{ marginRight: '10px' }}
+      />
+      <input
+        type="file"
+        value={productImg}
+        onChange={(e) => setProductImg(e.target.value)}
         style={{ marginRight: '10px' }}
       />
       <button onClick={addProduct}>Добавить продукт</button>
@@ -51,6 +75,7 @@ export default function Admin() {
         {products.map(product => (
           <li key={product.id}>
             {product.name}
+            {product.image}
             <button onClick={() => deleteProduct(product.id)}>Удалить</button>
           </li>
         ))}
