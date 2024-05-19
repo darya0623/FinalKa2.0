@@ -334,6 +334,7 @@
 
 .aside-wrap {
   display: flex;
+  padding-top: 140px;
 }
 
 .login-text {
@@ -344,18 +345,30 @@ line-height: 150%;
 color: #5c5c6d;
 }
 
+.button-area {
+  display: flex;
+  gap: 20px;
+}
+
 .btn-image {
-  width: 20px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
 }
 
 .login-btn {
-  border-radius: 100%;
-fill: #fff;
+  width: 50px;
+  height: 50px;
+  background: #fff;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.02);
-width: 50px;
-height: 50px;
-
+  border-radius: 50%; 
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .login-title {
   font-family: var(--font-family);

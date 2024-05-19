@@ -8,65 +8,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 export default function Tabacks() {
-  //     const container = document.querySelector("#categories-container")
-  //     const inputCatalogSearch = document.querySelector("#catalog-search")
 
-  //     GetAPIFunc("/tabacks").then(data => {
-
-  //         container.innerHTML = ""
-
-  //         data.map(item => {
-  //             const { id, category, name, image } = item
-  //             container.insertAdjacentHTML("beforeend", `
-  //             <div class="col col-12 col-md-6 col-lg-4 mb-3">
-
-  //                 <a to="./catalog.html?id=${id}" class="card-link">
-  //                     <div class="card">
-  //                         <img src="${image}" class="card-img-top" alt="phones">
-  //                         <div class="card-body">
-  //                             <h5 class="card-title">${name}</h5>
-  //                         </div>
-  //                     </div>
-  //                 </a>
-  //             </div>
-  //             `)
-  //         })
-  //     })
-
-  //     inputCatalogSearch.addEventListener("input", (e)=>{
-  //         GetAPIFunc(`/catalog?q=${e.target.value}`).then(data => {
-
-  //             container.innerHTML = ""
-
-  //             data.map(item => {
-  //                 const { id, category, name, image } = item
-  //                 container.insertAdjacentHTML("beforeend", `
-  //                 <div className='card-product'>
-  //                                     <img className='product-image' src={southVibe} alt='error' />
-  //                                     <b className='product-category'>Darkside</b>
-  //                                     <br />
-  //                                     <a to='/tabacks/product/:id' className='product-title'>${product.title}</a>
-  //                                     <hr />
-  //                                     <div className='product-taste'>
-  //                                         <p className='taste-item'>Груша</p>
-  //                                         <p className='taste-item'>Манго</p>
-  //                                     </div>
-  //                                 </div>
-  //                 `)
-  //             })
-  //         })
-  //     })
-  // }
-
-
-
-    const [productData, setProductData] = useState([]);
-  
-    useEffect(() => {
-      axios.get(`http://localhost:3000/products/1`) // Предположим, что нам нужна информация о продукте с id=1
-        .then(response => setProductData(response.data))
-        .catch(error => console.error('Error fetching product data:', error));
-    }, []);
   
 
   return (
@@ -133,8 +75,8 @@ export default function Tabacks() {
                         </div> */}
 
             <div className="cards-tabacks">
-              <div className="card-product" key={productData.id}>
-                <img className="product-image" src={productData.photo} alt="error" />
+              <div className="card-product">
+                <img className="product-image" srcalt="error" />
                 <b className="product-category">{productData.category?.categoryName}</b>
                 <br />
                 <Link to="/tabacks/product/:id" className="product-title">
@@ -142,7 +84,7 @@ export default function Tabacks() {
                 </Link>
                 <hr />
                 <div className="product-taste">
-                  <p className="taste-item">{productData.category?.taste}</p>
+                  <p className="taste-item">{category?.taste}</p>
                   <p className="taste-item">Манго</p>
                 </div>
               </div>
