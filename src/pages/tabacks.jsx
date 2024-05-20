@@ -8,8 +8,20 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 export default function Tabacks() {
+  const [data, setData] = useState([])
 
-  
+  useEffect(() => {
+    axios.get("http://localhost:7777/products")
+      .then((res) => {
+        
+        setData(res.data)
+      }).catch((err) => {
+        alert(err)
+      })
+  },[])
+
+  console.log(data);
+
 
   return (
     <Fragment>
@@ -59,41 +71,45 @@ export default function Tabacks() {
           </aside>
 
           {/*Products__wrap active*/}
-          <article className="tabacks-article">
             {/* <Button onClick={handleFilter} icon={<FiFilter />}>
                                     filter & sort
-                                </Button> */}
+                                  </Button> */}
 
             {/* <div className="Products__filters-right">
                             <button className={`Products__filters-red`} secondary>
-                                <p bodyText={"p"}>Models</p>
+                            <p bodyText={"p"}>Models</p>
                             </button>
                             <button secondary>
-                                <p bodyText={"p"}>products</p>
+                            <p bodyText={"p"}>products</p>
                             </button>
+                            
+                          </div> */}
 
-                        </div> */}
-
-            <div className="cards-tabacks">
-              <div className="card-product">
-                <img className="product-image" srcalt="error" />
-                <b className="product-category">{productData.category?.categoryName}</b>
+                          <article className="tabacks-article">
+            <div className="cards-tabacks" id="cards-tabacks">
+              {data?.map((product) => {
+                return(
+                  <div className="card-product">
+                <img className="product-image" src={product?.photo} alt="error" />
+                <b className="product-category">{product?.category?.categoryName}</b>
                 <br />
-                <Link to="/tabacks/product/:id" className="product-title">
-                  {productData.title}
+                <Link to="/tabacks/product/${product.id}" className="product-title">
+                     {product?.title}
                 </Link>
                 <hr />
                 <div className="product-taste">
-                  <p className="taste-item">{category?.taste}</p>
-                  <p className="taste-item">Манго</p>
+                  <p className="taste-item">{product.category?.taste1}</p>
+                  <p className="taste-item">{product.category?.taste2}</p>
+                  <p className="taste-item">{product.category?.taste3}</p>
+                  <p className="taste-item">{product.category?.taste4}</p>
+                  <p className="taste-item">{product.category?.taste5}</p>
+               
                 </div>
               </div>
-             
-            </div>
+                )
+              })}
 
-            {/* <div className="Products__buttons">
-                            <button primary>load more products</button>
-                        </div> */}
+            </div>
           </article>
         </div>
       </div>

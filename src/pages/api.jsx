@@ -1,4 +1,4 @@
-let HostAPI = "https://hookah-server-api.onrender.com"
+let HostAPI = "https://hookah-api.onrender.com"
 
 export const GetAPIFunc = (path) => {
     path = HostAPI + path

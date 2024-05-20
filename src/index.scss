@@ -196,15 +196,16 @@
 
 .product-taste {
   display: flex;
-  gap: 5px;
+  column-gap: 10px;
+  flex-wrap: wrap;
 }
 .taste-item {
   display: flex;
   justify-content: center;
   background: #f2f6fa;
   border-radius: 50px;
-  width: 70px;
   height: 26px;
+
 }
 
 .tabacks-aside {
@@ -329,11 +330,12 @@
 
 .aside {
   background: #f7fafc;
-
+  width: 50%;
+  padding-left: 300px;
 }
 
 .aside-wrap {
-  display: flex;
+  background: #f7fafc;
   padding-top: 140px;
 }
 
@@ -472,3 +474,74 @@ color: #ff0013;
   height: 635px;
 }
 
+
+.login-main {
+  display:  flex;
+  height: 75vh;}
+
+.article-wrap {
+  padding-top: 140px;
+  padding-left: 60px;
+}
+
+.article-login-title {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #010624;
+padding-bottom: 40px;
+}
+
+.login-email {
+  border: 0;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 15px;
+color: #010624;
+width: 304px;
+transition: color 1s;
+
+}
+
+.login-email:focus{
+  outline: none;
+}
+
+.login-password:focus{
+  outline: none;
+}
+
+.login-password {
+  border: 0;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 15px;
+color: #010624;
+width: 304px;
+
+}
+
+.cherti{
+  border: 1px solid #edecef;
+width: 304px;
+height: 1px;
+}
+
+.login-button {
+  border-radius: 4px;
+  border: 0;
+width: 200px;
+height: 45px;
+background: #a1c4fd;
+color: #fff;
+transition: all 0.5s;
+}
+
+.login-button:hover {
+  border-radius: 4px;
+  border: 0;
+width: 200px;
+height: 45px;
+background: #5d9bff;
+color: #fff;
+}
