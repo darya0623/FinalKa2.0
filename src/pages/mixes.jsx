@@ -13,11 +13,11 @@ export default function Mixes() {
 
     <div className="container">
       <header className="mixes-header">
-        <h1 className="header-title">Лаунжи</h1>
+        <h1 className="header-title">Миксы</h1>
         <hr className="chertochka" />
       </header>
       <div className="mixes-wrap">
-        <aside className="mixes-aside">
+        {/* <aside className="mixes-aside">
           <div className="mixes-aside-item">
             
                 <h4 className="mixes-aside-text">Фильтры</h4>
@@ -56,7 +56,7 @@ export default function Mixes() {
                 <p className="mixes-aside-text">Груша <input type="checkbox" /></p>
             
           </div>
-        </aside>
+        </aside> */}
 
         {/*Products__wrap active*/}
         <article className="mixes-article">
@@ -77,69 +77,67 @@ export default function Mixes() {
           <div className="cards-mixes">
             <div className="card-product">
               <img className="product-image" src={IdealBreakfast} alt="error" />
-              <b className="product-loc">Лубянка</b>
+              
               <br />
-              <Link to="/mixes/product/:id" className="product-title">
+              <p className="product-title">
                 Идеальный завтрак
-              </Link>
+              </p>
               <hr />
               <div className="product-price"></div>
             </div>
             <div className="card-product">
               <img className="product-image" src={IdealBreakfast} alt="error" />
-              <b className="product-loc">Лубянка</b>
+              
               <br />
-              <Link to="/mixes/product/" className="product-title">
+              <p className="product-title">
                 Идеальный завтрак
-              </Link>
+              </p>
               <hr />
               <div className="product-price"></div>
             </div>
             <div className="card-product">
               <img className="product-image" src={IdealBreakfast} alt="error" />
-              <b className="product-new">НОВИНКА</b>
+              
               <br />
-              <Link to="/mixes/product/:id" className="product-title">
+              <p className="product-title">
                 Идеальный завтрак
-              </Link>
+              </p>
               <hr />
               <div className="product-price"></div>
             </div>
             <div className="card-product">
               <img className="product-image" src={IdealBreakfast} alt="error" />
-              <b className="product-loc">Лубянка</b>
+              
               <br />
-              <Link to="/mixes/product/:id" className="product-title">
+              <p className="product-title">
                 Идеальный завтрак
-              </Link>
+              </p>
               <hr />
               <div className="product-price"></div>
             </div>
             <div className="card-product">
               <img className="product-image" src={IdealBreakfast} alt="error" />
-              <b className="product-loc">Лубянка</b>
+              
               <br />
-              <Link to="/mixes/product/:id" className="product-title">
+              <p className="product-title">
                 Идеальный завтрак
-              </Link>
+              </p>
               <hr />
               <div className="product-price"></div>
             </div>
             <div className="card-product">
               <img className="product-image" src={IdealBreakfast} alt="error" />
-              <b className="product-loc">Лубянка</b>
+              
               <br />
-              <a to="/mixes/product/:id" className="product-title">
+              <p className="product-title">
                 Идеальный завтрак
-              </a>
+              </p>
               <hr />
               <div className="product-price"></div>
             </div>
           </div>
 
-          <div className="Products__buttons">
-            <button primary>load more products</button>
-          </div>
+         
         </article>
       </div>
     </div>

@@ -1,6 +1,6 @@
 {
-  "prostofile": {
-    "login": "DashKa",
+  "user": {
+    "username": "DashKa",
     "password": "23.Juni"
   },
   "products": [
@@ -29,16 +29,7 @@
     },
     {
       "id": "2",
-      "title": "Pomegranate",
-      "photo": "./pomegranate.png",
-      "category": {
-        "categoryName": "Duft",
-        "taste1": "Груша"
-      }
-    },
-    {
-      "id": "3",
-      "title": "Южный Вайб",
+      "title": "Cereal",
       "photo": "./cereal.png",
       "category": {
         "categoryName": "Tangiers Special",

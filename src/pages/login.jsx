@@ -10,20 +10,39 @@ import axios from "axios";
 
 export default function LogIn() {
 
-  const [data, setData] = useState([])
+  const [userName, setUserName] = useState('');
+  const [userPassword, setUserPassword] = useState('');
+  const [user, setUser] = useState([]);
 
+  
   useEffect(() => {
-    axios.get("http://localhost:7777/prostofile")
-      .then((res) => {
-        
-        setData(res.data)
-      }).catch((err) => {
-        alert(err)
+    axios.get('http://localhost:7777/user')
+      .then(response => setUser(response.data))
+      .catch(error => console.error('Error fetching products:', error));
+  }, []);
+
+  
+
+  const addUser = () => {
+    if (!userName.trim() && !userPassword.trim()) {
+      alert('Ощипка');
+      return;
+    }
+
+    const newUser = { 
+      username: userName.trim(),   
+        password: userPassword.trim()
+    };
+    
+
+    axios.post('http://localhost:7777/user', newUser)
+      .then(response => {
+        setUser([...user, response.data]);
+        setUserName('');
+        setUserPassword('')
       })
-  },[])
-
-  console.log(data);
-
+      .catch(error => alert('Ощипка'));
+  };
   return (
     <Fragment>
     <Helmet>
@@ -49,11 +68,22 @@ export default function LogIn() {
           <div className="container">
             <div className="article-wrap">
               <h1 className="article-login-title">Войти</h1>
-              <input className="login-email" id="username" type="text" placeholder="Ваш email" />
+              <input className="login-email" 
+              id="username" 
+              type="text" 
+              placeholder="Ваш email/username"
+              value={userName}
+        onChange={(e) => setUserName(e.target.value)} />
               <hr className="cherti"/>
-              <input className="login-password" type="password" placeholder="Ваш пароль" />
+              <input className="login-password" 
+              type="password" 
+              placeholder="Ваш пароль"
+              value={userPassword}
+        onChange={(e) => setUserPassword(e.target.value)} />
               <hr className="cherti"/>
-              <button className="login-button">Войти</button>
+              <button 
+              className="login-button"
+              onClick={addUser}>Войти</button>
               <p className="register-link">Еще нет аккаунта? <Link to="/signUp">Зарегистрироваться</Link></p>
             </div>
           </div>

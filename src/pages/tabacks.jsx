@@ -3,7 +3,6 @@ import { Fragment, useState, useEffect, useContext } from "react";
 import { Button, Checkbox, Flex, Typography } from "antd";
 import { Breadcrumb } from "react-bootstrap";
 import { Helmet } from "react-helmet";
-import southVibe from "./../img/southVibe.png";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
@@ -40,7 +39,7 @@ export default function Tabacks() {
           </h3>
         </header>
         <div className="tabacks-wrap">
-          <aside className="tabacks-aside">
+          {/* <aside className="tabacks-aside">
             <div className="tabacks-aside-item">
               <h4 className="tabacks-aside-text">Тип вкуса</h4>
             </div>
@@ -68,7 +67,7 @@ export default function Tabacks() {
 
               <p className="tabacks-aside-text">Груша <input type="checkbox" /></p>
             </div>
-          </aside>
+          </aside> */}
 
           {/*Products__wrap active*/}
             {/* <Button onClick={handleFilter} icon={<FiFilter />}>
@@ -93,9 +92,9 @@ export default function Tabacks() {
                 <img className="product-image" src={product?.photo} alt="error" />
                 <b className="product-category">{product?.category?.categoryName}</b>
                 <br />
-                <Link to="/tabacks/product/${product.id}" className="product-title">
+                <p className="product-title">
                      {product?.title}
-                </Link>
+                </p>
                 <hr />
                 <div className="product-taste">
                   <p className="taste-item">{product.category?.taste1}</p>

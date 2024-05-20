@@ -80,9 +80,9 @@ const Lounges = () => {
                 <img className="product-image" src={LoungeImage} alt="error" />
                 <b className="product-loc">Лубянка</b>
                 <br />
-                <Link to="/lounges/product/:id" className="product-title">
+                <p className="product-title">
                   МЯТА LOUNGE На Лубянке
-                </Link>
+                </p>
                 <hr />
                 <div className="product-price"></div>
               </div>
@@ -90,9 +90,9 @@ const Lounges = () => {
                 <img className="product-image" src={LoungeImage} alt="error" />
                 <b className="product-loc">Лубянка</b>
                 <br />
-                <Link to="/lounges/product/" className="product-title">
+                <p className="product-title">
                   МЯТА LOUNGE На Лубянке
-                </Link>
+                </p>
                 <hr />
                 <div className="product-price"></div>
               </div>
@@ -100,9 +100,9 @@ const Lounges = () => {
                 <img className="product-image" src={LoungeImage} alt="error" />
                 <b className="product-loc">Лубянка</b>
                 <br />
-                <Link to="/lounges/product/:id" className="product-title">
+                <p className="product-title">
                   МЯТА LOUNGE На Лубянке
-                </Link>
+                </p>
                 <hr />
                 <div className="product-price"></div>
               </div>
@@ -110,9 +110,9 @@ const Lounges = () => {
                 <img className="product-image" src={LoungeImage} alt="error" />
                 <b className="product-loc">Лубянка</b>
                 <br />
-                <Link to="/lounges/product/:id" className="product-title">
+                <p className="product-title">
                   МЯТА LOUNGE На Лубянке
-                </Link>
+                </p>
                 <hr />
                 <div className="product-price"></div>
               </div>
@@ -120,9 +120,9 @@ const Lounges = () => {
                 <img className="product-image" src={LoungeImage} alt="error" />
                 <b className="product-loc">Лубянка</b>
                 <br />
-                <Link to="/lounges/product/:id" className="product-title">
+                <p className="product-title">
                   МЯТА LOUNGE На Лубянке
-                </Link>
+                </p>
                 <hr />
                 <div className="product-price"></div>
               </div>
@@ -130,9 +130,9 @@ const Lounges = () => {
                 <img className="product-image" src={LoungeImage} alt="error" />
                 <b className="product-loc">Лубянка</b>
                 <br />
-                <a to="/lounges/product/:id" className="product-title">
+                <p className="product-title">
                   МЯТА LOUNGE На Лубянке
-                </a>
+                </p>
                 <hr />
                 <div className="product-price"></div>
               </div>
