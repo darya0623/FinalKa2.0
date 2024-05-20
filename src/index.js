@@ -9,12 +9,8 @@ import {
 } from "react-router-dom";
 import Main from './pages/main.jsx';
 import Tabacks from './pages/tabacks.jsx';
-import TabackInfo from './pages/tabakInfo.jsx';
 import Lounges from "./pages/lounges.jsx"
-import LoungeInfo from "./pages/loungeInfo.jsx"
 import Mixes from "./pages/mixes.jsx"
-import MixInfo from "./pages/mixInfo.jsx"
-import Mixer from "./pages/mixer.jsx"
 import LogIn from "./pages/login.jsx"
 import SignUp from "./pages/signup.jsx"
 import Map from './pages/map.jsx';
@@ -32,7 +28,7 @@ const router = createBrowserRouter([
         element: <Main />
       },
       {
-        path: "/admin",
+        path: "admin",
         element: <Admin />
       },
       {
@@ -40,28 +36,12 @@ const router = createBrowserRouter([
         element: <Tabacks />
       },
       {
-        path: "tabacks/product/:id",
-        element: <TabackInfo />
-      },
-      {
         path: "mixes",
         element: <Mixes />
       },
       {
-        path: "mixes/product/:id",
-        element: <MixInfo />
-      },
-      {
-        path: "mixer",
-        element: <Mixer />
-      },
-      {
         path: "lounges",
         element: <Lounges />
-      },
-      {
-        path: "lounde/info",
-        element: <LoungeInfo />
       },
       {
         path: "map",

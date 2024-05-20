@@ -1,8 +1,52 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import { Fragment, useState, useEffect, useContext } from "react";
 import Yandex from "./../img/icons/Yandex.svg"
 import VK from "./../img/icons/VK.svg"
 import Google from "./../img/icons/Google.svg"
-const SignUp = () => {
+import axios from 'axios'
+export default function SignUp() {
+
+//   const AuthFunc = (input, password, login) => {
+//     login.addEventListener("click", () => {
+//         const user = {
+//             lognUser: input.value,
+//             passUser: password.value,
+//         }
+        
+//         GetAPIFunc("/profile").then((data) => {
+//             if (
+//                 (data.login === user.lognUser) &&
+//                 (data.password === user.passUser)
+//             ) {
+//                 localStorage.setItem("auth", JSON.stringify(user))
+//             }
+//         })
+//     })
+// }
+
+//  const CHeckAuthFunc = (modal, removeOne, removeTwo, openAuth) => {
+//     let user = JSON.parse(localStorage.getItem("auth"))
+//     if (user) {
+        
+//         axios.get("/profile").then((data) => {
+//             if (
+//                 (data.login === user.lognUser) &&
+//                 (data.password === user.passUser)
+//             ) {
+//                 ModalLoginFunc(modal, removeOne, removeTwo, openAuth)
+//             }
+//         })
+//     }
+// }
+
+//  const LogoutAuthFunc = (eventButton) => {
+//     eventButton.addEventListener("click", () => {
+//         localStorage.removeItem("auth")
+//     })
+// }
+
+
+  
   return (
     <Fragment>
       <main className="login-main">
@@ -29,7 +73,8 @@ const SignUp = () => {
               <hr className="cherti"/>
               <input className="login-password" type="password" placeholder="Ваш пароль" />
               <hr className="cherti"/>
-              <button className="login-button">Войти</button>
+              
+              <button className="login-button">Зарегистрироваться</button>
             </div>
           </div>
         </article>
@@ -37,5 +82,3 @@ const SignUp = () => {
     </Fragment>
   )
 }
-
-export default SignUp

@@ -1,28 +1,34 @@
 import React from "react";
-import { Fragment } from "react";
+import { Fragment, useState, useEffect, useContext } from "react";
 import { Checkbox } from "antd";
 import Yandex from "./../img/icons/Yandex.svg"
 import VK from "./../img/icons/VK.svg"
 import Google from "./../img/icons/Google.svg"
+import { Helmet } from "react-helmet"
+import { Link } from "react-router-dom";
+import axios from "axios";
 
 export default function LogIn() {
 
-  // const [data, setData] = useState([])
+  const [data, setData] = useState([])
 
-  // useEffect(() => {
-  //   axios.get("http://localhost:7777/products")
-  //     .then((res) => {
+  useEffect(() => {
+    axios.get("http://localhost:7777/prostofile")
+      .then((res) => {
         
-  //       setData(res.data)
-  //     }).catch((err) => {
-  //       alert(err)
-  //     })
-  // },[])
+        setData(res.data)
+      }).catch((err) => {
+        alert(err)
+      })
+  },[])
 
-  // console.log(data);
+  console.log(data);
 
   return (
     <Fragment>
+    <Helmet>
+    <title>Hookah - Вход в аккаунт 😶‍🌫️</title>
+  </Helmet>
       <main className="login-main">
         <aside className="aside">
           <div className="aside-wrap">
@@ -48,6 +54,7 @@ export default function LogIn() {
               <input className="login-password" type="password" placeholder="Ваш пароль" />
               <hr className="cherti"/>
               <button className="login-button">Войти</button>
+              <p className="register-link">Еще нет аккаунта? <Link to="/signUp">Зарегистрироваться</Link></p>
             </div>
           </div>
         </article>

@@ -3,12 +3,12 @@ const path = require('path');
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     entry: {
-        main: './index.js',
-        catalog: './tabacks.js',
-        admin: './admin.js'
+        main: './index.jsx',
+        catalog: './tabacks.jsx',
+        admin: './admin.jsx'
     },
     output: {
-        filename: './js/[name].js',
+        filename: './jsx/[name].jsx',
         path: path.resolve(__dirname, 'dist')
     },
     devServer: {

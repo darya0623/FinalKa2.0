@@ -8,7 +8,7 @@ export default function Mixes() {
   return (
     <Fragment>
     <Helmet>
-      <title>Hookah - mixes</title>
+      <title>Hookah - Миксы 😶‍🌫️</title>
     </Helmet>
 
     <div className="container">

@@ -7,9 +7,10 @@ import { Checkbox } from "antd";
 const Lounges = () => {
   return (
     <Fragment>
-      <Helmet>
-        <title>Hookah - Lounges</title>
-      </Helmet>
+     <Helmet>
+      <title>Hookah - Места для курева 😶‍🌫️</title>
+    </Helmet>
+
 
       <div className="container">
         <header className="lounges-header">
@@ -17,7 +18,7 @@ const Lounges = () => {
           <hr className="chertochka" />
         </header>
         <div className="lounges-wrap">
-          <aside className="lounges-aside">
+          {/* <aside className="lounges-aside">
             <div className="lounges-aside-item">
               
                   <h4 className="lounges-aside-text">Фильтры</h4>
@@ -56,7 +57,7 @@ const Lounges = () => {
                   <p className="lounges-aside-text">Груша <input type="checkbox" /></p>
               
             </div>
-          </aside>
+          </aside> */}
 
           {/*Products__wrap active*/}
           <article className="lounges-article">
@@ -137,9 +138,7 @@ const Lounges = () => {
               </div>
             </div>
 
-            <div className="Products__buttons">
-              <button primary>load more products</button>
-            </div>
+            
           </article>
         </div>
       </div>

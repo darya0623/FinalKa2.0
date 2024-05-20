@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 export default function Admin() {
@@ -17,7 +18,7 @@ export default function Admin() {
 //       }),
 
   useEffect(() => {
-    axios.get('http://localhost:3000/products')
+    axios.get('http://localhost:7777/products')
       .then(response => setProducts(response.data))
       .catch(error => console.error('Error fetching products:', error));
   }, []);
@@ -31,12 +32,12 @@ export default function Admin() {
     }
 
     const newProduct = { 
-        name: productTitle.trim(),   
-        image: productImg.trim()
+        title: productTitle.trim(),   
+        photo: productImg.trim()
     };
     
 
-    axios.post('http://localhost:3000/products', newProduct)
+    axios.post('http://localhost:7777/products', newProduct)
       .then(response => {
         setProducts([...products, response.data]);
         setProductTitle('');
@@ -46,7 +47,7 @@ export default function Admin() {
   };
 
   const deleteProduct = (id) => {
-    axios.delete(`http://localhost:3000/products/${id}`)
+    axios.delete(`http://localhost:7777/products/${id}`)
       .then(() => {
         const updatedProducts = products.filter(product => product.id !== id);
         setProducts(updatedProducts);
@@ -74,8 +75,27 @@ export default function Admin() {
       <ul>
         {products.map(product => (
           <li key={product.id}>
-            {product.name}
-            {product.image}
+              
+                return(
+                  <div className="card-product">
+                <img className="product-image" src={product?.photo} alt="error" />
+                <b className="product-category">{product?.category?.categoryName}</b>
+                <br />
+                <Link to="/tabacks/product/${product.id}" className="product-title">
+                     {product?.title}
+                </Link>
+                <hr />
+                <div className="product-taste">
+                  <p className="taste-item">{product.category?.taste1}</p>
+                  <p className="taste-item">{product.category?.taste2}</p>
+                  <p className="taste-item">{product.category?.taste3}</p>
+                  <p className="taste-item">{product.category?.taste4}</p>
+                  <p className="taste-item">{product.category?.taste5}</p>
+               
+                </div>
+              </div>
+                )
+              
             <button onClick={() => deleteProduct(product.id)}>Удалить</button>
           </li>
         ))}

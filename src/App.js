@@ -40,6 +40,18 @@ const App = () => {
         </div>
       </header>
 
+      
+      <section className='navbar-section'>
+      <nav className="header-nav">
+            <Link to="/"><img className="nav-logo" src={logo} alt="error" /></Link>
+            <Link to="/tabacks" className="nav-item">Табаки</Link>
+            <Link to="/mixes" className="nav-item">Миксы</Link>
+            <Link to="/lounges" className="nav-item">Лаунжи</Link>
+            <Link to="!#" className="nav-item">Магазины</Link>
+            <Link to="/map" className="nav-item">Карта</Link>
+          </nav>
+                </section>
+
 
 
       <Outlet />

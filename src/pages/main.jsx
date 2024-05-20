@@ -1,5 +1,5 @@
 import React from 'react'
-import { Fragment } from 'react'
+import { Fragment, useState, useEffect, useContext } from "react";
 import Kalyan from "./../img/Kalyan.png";
 import Hello from "./../img/Hello.png";
 import FogOne from "./../img/FogOne.png";
@@ -10,11 +10,25 @@ import IdealBreakfast from "./../img/idealBreakfast.png"
 import Portal from "./../img/Portal.png"
 import vectorOne from "./../img/vectorOne.svg"
 import vectorTwo from "./../img/vectorTwo.svg"
-import southVibe from "./../img/southVibe.png"
+// import southVibe from "./../img/southVibe.png"
 import { Helmet } from 'react-helmet';
 import "./../index.scss"
+import axios from "axios";
 
 export default function Main() {
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+      axios.get("http://localhost:7777/products")
+        .then((res) => {
+          
+          setData(res.data)
+        }).catch((err) => {
+          alert(err)
+        })
+    },[])
+  
+    console.log(data);
     return (
         <Fragment>
             <Helmet>
@@ -31,7 +45,7 @@ export default function Main() {
                                 <p className="hello-text">Приветствуем на</p>
                                 <img src={Hello} alt="error" className="hello-name" />
                                 <img src={Kalyan} alt="error" className="hello-kalyan" />
-                                <img src={Portal} alt="" className="hello-portal" />
+                                <img src={Portal} alt="error" className="hello-portal" />
                                 <div className='subtitle-wrap'>
 
                                     <div className="main-subtitle">
@@ -66,52 +80,31 @@ export default function Main() {
                     <div className='container'>
                         <h1 className='main-title'>Популярные табаки</h1>
                         <hr className='chertochka' />
-                        <div className='cards-tabacks'>
-                            <div className='card-product'>
-                                <img className='product-image' src={southVibe} alt='error' />
-                                <b className='product-category'>Darkside</b>
-                                <br />
-                                <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
-                                <hr />
-                                <div className='product-taste'>
-                                    <p className='taste-item'>Груша</p>
-                                    <p className='taste-item'>Манго</p>
-                                </div>
-                            </div>
-                            <div className='card-product'>
-                                <img className='product-image' src={southVibe} alt='error' />
-                                <b className='product-category'>Darkside</b>
-                                <br />
-                                <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
-                                <hr />
-                                <div className='product-taste'>
-                                    <p className='taste-item'>Груша</p>
-                                    <p className='taste-item'>Манго</p>
-                                </div>
-                            </div>
-                            <div className='card-product'>
-                                <img className='product-image' src={southVibe} alt='error' />
-                                <b className='product-category'>Darkside</b>
-                                <br />
-                                <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
-                                <hr />
-                                <div className='product-taste'>
-                                    <p className='taste-item'>Груша</p>
-                                    <p className='taste-item'>Манго</p>
-                                </div>
-                            </div>
-                            <div className='card-product'>
-                                <img className='product-image' src={southVibe} alt='error' />
-                                <b className='product-category'>Darkside</b>
-                                <br />
-                                <a href='/tabackInfo' className='product-title'>Южный Вайб</a>
-                                <hr />
-                                <div className='product-taste'>
-                                    <p className='taste-item'>Груша</p>
-                                    <p className='taste-item'>Манго</p>
-                                </div>
-                            </div>
-                        </div>
+
+                        <div className="cards-tabacks" id="cards-tabacks">
+              {data?.map((product) => {
+                return(
+                  <div className="card-product">
+                <img className="product-image" src={product?.photo} alt="error" />
+                <b className="product-category">{product?.category?.categoryName}</b>
+                <br />
+                <Link to="/tabacks/product/${product.id}" className="product-title">
+                     {product?.title}
+                </Link>
+                <hr />
+                <div className="product-taste">
+                  <p className="taste-item">{product.category?.taste1}</p>
+                  <p className="taste-item">{product.category?.taste2}</p>
+                  <p className="taste-item">{product.category?.taste3}</p>
+                  <p className="taste-item">{product.category?.taste4}</p>
+                  <p className="taste-item">{product.category?.taste5}</p>
+               
+                </div>
+              </div>
+                )
+              })}
+
+            </div>
                     </div>
 
                     <h1 className='main-title'>Популярные табаки</h1>
@@ -213,6 +206,7 @@ export default function Main() {
                 </main>
 
             </div>
+
 
         </Fragment>
 

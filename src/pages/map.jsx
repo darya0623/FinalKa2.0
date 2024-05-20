@@ -3,9 +3,9 @@ import MapVideo from "./../img/map.mp4";
 
 export default function Map() {
 
-
   return (
     <Fragment>
+      
       <main>
         <div className="container">
           <div className="map-wrap">
@@ -16,7 +16,6 @@ export default function Map() {
             <source src={MapVideo} type="video/mp4" />
           </video>
           </div>
-
 
         </div>
       </main>
