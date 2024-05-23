@@ -76,7 +76,7 @@ export default function Admin() {
         {products.map(product => (
           <li key={product.id}>
               
-                return(
+              
                   <div className="card-product">
                 <img className="product-image" src={product?.photo} alt="error" />
                 <b className="product-category">{product?.category?.categoryName}</b>
@@ -92,11 +92,11 @@ export default function Admin() {
                   <p className="taste-item">{product.category?.taste4}</p>
                   <p className="taste-item">{product.category?.taste5}</p>
                
+            <button onClick={() => deleteProduct(product.id)}>Удалить</button>
                 </div>
               </div>
-                )
+                
               
-            <button onClick={() => deleteProduct(product.id)}>Удалить</button>
           </li>
         ))}
       </ul>

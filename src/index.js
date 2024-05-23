@@ -11,7 +11,6 @@ import Main from './pages/main.jsx';
 import Tabacks from './pages/tabacks.jsx';
 import Lounges from "./pages/lounges.jsx"
 import Mixes from "./pages/mixes.jsx"
-import LogIn from "./pages/login.jsx"
 import SignUp from "./pages/signup.jsx"
 import Map from './pages/map.jsx';
 import NotFound from './pages/notFound.jsx';
@@ -46,10 +45,6 @@ const router = createBrowserRouter([
       {
         path: "map",
         element: <Map />
-      },
-      {
-        path: "login",
-        element: <LogIn />
       },
       {
         path: "signup",

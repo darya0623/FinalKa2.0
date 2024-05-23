@@ -1,8 +1,4 @@
 {
-  "user": {
-    "username": "DashKa",
-    "password": "23.Juni"
-  },
   "products": [
     {
       "id": "0",
@@ -36,20 +32,94 @@
         "taste1": "Манго",
         "taste2": "Груша"
       }
+    },
+    {
+      "id": "3",
+      "title": "Южный Вайб",
+      "photo": "./southVibe.png",
+      "category": {
+        "categoryName": "Darkside",
+        "taste1": "Манго",
+        "taste2": "Груша"
+      }
+    },
+    {
+      "id": "4",
+      "title": "Pomegranate",
+      "photo": "./pomegranate.png",
+      "category": {
+        "categoryName": "Duft",
+        "taste1": "Груша",
+        "taste2": "Манго",
+        "taste3": "Лёд",
+        "taste4": "Вкус табака",
+        "taste5": "Выпечка"
+      }
+    },
+    {
+      "id": "5",
+      "title": "Cereal",
+      "photo": "./cereal.png",
+      "category": {
+        "categoryName": "Tangiers Special",
+        "taste1": "Манго",
+        "taste2": "Груша"
+      }
     }
   ],
   "mixes": [
     {
       "id": "0",
       "title": "Идеальный завтрак",
-      "photo": "../img/idealBreakfast.png",
-      "description": " Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Оксмокс заглавных осталось журчит своих дороге бросил точках пунктуация текста первую образ, страна использовало они заголовок имеет но проектах назад необходимыми своего!",
+      "photo": "./idealBreakfast.png",
       "category": {
-        "categoryName": "Darkside",
-        "taste": [
-          "Манго",
-          "Груша"
-        ]
+        "categoryName1": "Darkside",
+        "categoryName2": "Spectrum"
+      }
+    },
+    {
+      "id": "1",
+      "title": "Морозная ягода",
+      "photo": "./FrozenBerry.png",
+      "category": {
+        "categoryName1": "Darkside",
+        "categoryName2": "Spectrum"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Космокола",
+      "photo": "./CosmoCola.png",
+      "category": {
+        "categoryName1": "Darkside",
+        "categoryName2": "Spectrum"
+      }
+    },
+    {
+      "id": "3",
+      "title": "Идеальный завтрак",
+      "photo": "./idealBreakfast.png",
+      "category": {
+        "categoryName1": "Darkside",
+        "categoryName2": "Spectrum"
+      }
+    },
+    {
+      "id": "4",
+      "title": "Морозная ягода",
+      "photo": "./FrozenBerry.png",
+      "category": {
+        "categoryName1": "Darkside",
+        "categoryName2": "Spectrum"
+      }
+    },
+    {
+      "id": "5",
+      "title": "Космокола",
+      "photo": "./CosmoCola.png",
+      "category": {
+        "categoryName1": "Darkside",
+        "categoryName2": "Spectrum"
       }
     }
   ]

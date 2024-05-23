@@ -107,8 +107,6 @@ export default function Main() {
             </div>
                     </div>
 
-                    <h1 className='main-title'>Популярные табаки</h1>
-
 
                     <section className='create-section-one'>
                         <div className='container'>
@@ -116,9 +114,7 @@ export default function Main() {
 
                                 <h1 className='title-item'>Создай свой микс</h1>
                                 <p className='create-desc'>Мы рады тому, что способны удовлетворить даже самые притязательные
-                                    <br />
                                     требования наших Клиентов, а в ближайших планах нашей компании, еще
-                                    <br />
                                     больше расширить ассортимент товаров и услуг. </p>
                             </div>
 
@@ -127,7 +123,8 @@ export default function Main() {
 
                     <section className='create-section-two'>
                         <div className='container'>
-                            <h1 className='create-title-popular'>Популярные табаки</h1>
+                        <h1 className='main-title'>Популярные миксы</h1>
+                        <hr className='chertochka' />
 
                             <div className="cards-mixes">
                                 <div className="card-product">
@@ -162,6 +159,8 @@ export default function Main() {
                                 </div>
                            
                             </div>
+                            <h1 className='main-title'>Популярные лаунжи</h1>
+                        <hr className='chertochka' />
 
                             <div className="cards-lounges">
                                 <div className="card-product">
